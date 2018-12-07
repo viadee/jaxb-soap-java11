@@ -1,0 +1,28 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://viadee.de/java11/ws"
+           xmlns:tns="http://viadee.de/java11/ws" elementFormDefault="qualified">
+
+    <xs:element name="getHelloMessageRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getHelloMessageResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="helloMessage" type="tns:helloMessage"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="helloMessage">
+        <xs:sequence>
+            <xs:element name="text" type="xs:string"/>
+            <xs:element name="id" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
