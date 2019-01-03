@@ -18,6 +18,23 @@
     <name>Java 11 JAXB-Maven-Example</name>
     <url>https://blog.viadee.de/jaxb-und-soap-in-java-11</url>
 
+    <organization>
+        <name>viadee Unternehmensberatung AG</name>
+        <url>www.viadee.de</url>
+    </organization>
+
+    <licenses>
+        <license>
+            <name>BSD-3 Clause</name>
+            <url>https://opensource.org/licenses/BSD-3-Clause</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>https://github.com/viadee/jaxb-soap-java11</connection>
+        <url>GitHub</url>
+    </scm>
+
     <dependencies>
         <dependency>
             <groupId>org.glassfish.jaxb</groupId>
